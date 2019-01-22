@@ -24,9 +24,9 @@ OPTIONS:
 
 Example usage:
 ```
-$ ./sql-backup-restore.sh -f ~/JulyDatabaseBackup.bak -d THISISMYDATABASENAME
+$ ./sql-backup-restore.sh -f /mnt/FileSrv_IP/DB_Backups/JulyDatabaseBackup.bak -d THISISMYDATABASENAME
 [*] Creating S3 Bucket to store database backup: s3-sql-restore-wi41zjcsdg
-[*] Uploading backup file (/root/JulyDatabaseBackup.bak) to S3 bucket (s3-sql-restore-wi41zjcsdg)
+[*] Uploading backup file (/mnt/FileSrv_IP/DB_Backups/JulyDatabaseBackup.bak) to S3 bucket (s3-sql-restore-wi41zjcsdg)
 upload: ../JulyDatabaseBackup.bak to s3://s3-sql-restore-wi41zjcsdg/JulyDatabaseBackup.bak
 [*] Creating a VPC security group allowing TCP1433 inbound for RDS
 [*] Creating the IAM Role & Policy so RDS can access S3
